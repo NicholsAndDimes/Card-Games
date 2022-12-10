@@ -22,8 +22,13 @@ NO_QUESTION = "____"
 
 # Copy your getInfo function from the minitask
 def getInfo(question, whichInfo):
+    #NO_QUESTION IS A STRING this is written if variable question is equal to variable NO_QUESTION, not the string
     if question == NO_QUESTION:
         getInfoReturn = NO_QUESTION
+        #No need to make a variable just to send the same output
+        #remove above line, `return question` just because it is named getInfoReturn, when you say 
+        #var_a = getInfo(input, whichInfo)
+        #the getInfoReturn is made and destroyed instanly
         return getInfoReturn
     else:
         getInfoQuestion = questionList[question].split(",")
